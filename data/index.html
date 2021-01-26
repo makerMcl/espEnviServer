@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    %REFRESHINDEXTAG%
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+    <meta charset="iso-8859-1" />
+</head>
+
+<body class="main">
+    <div class="main">
+        <div class="head">
+            %REFRESHINDEXLINK% &nbsp; | &nbsp; <a href="/log.html">Log</a> <span
+                style="white-space:nowrap;">Build: %__TIMESTAMP__%</span></div>
+        <!--<h1 class="head">%APPNAME%</h1>-->
+        <div class="content">
+            <p class="content">%STATUSBAR%</p>
+            <p>
+                <span class="sensor-labels">Temperatur</span>
+                <span id="temperature">%SHT30_TEMPERATURE%</span>
+                <sup class="units">°C</sup>
+              </p>
+              <p>
+                <span class="sensor-labels">Luftfeuchte</span>
+                <span id="humidity">%SHT30_HUMIDITY%</span>
+                <sup class="units">%%</sup>
+              </p>
+
+              <p>
+                <span class="sensor-labels">LPG</span>
+                <span id="pressure">%MQ2_LPG%</span>
+                <sup class="units">ppm</sup>
+              </p>
+              <p>
+                <span class="sensor-labels">Methan</span>
+                <span id="pressure">%MQ2_METHANE%</span>
+                <sup class="units">ppm</sup>
+              </p>
+              <p>
+                <span class="sensor-labels">Rauch</span>
+                <span id="pressure">%MQ2_SMOKE%</span>
+                <sup class="units">ppm</sup>
+              </p>
+              <p>
+                <span class="sensor-labels">Wasserstoff</span>
+                <span id="pressure">%MQ2_HYDROGEN%</span>
+                <sup class="units">ppm</sup>
+              </p>
+
+            <div class="message">
+                %USERMESSAGE%
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
